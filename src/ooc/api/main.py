@@ -1,7 +1,8 @@
 from fastapi import FastAPI
+
 from ooc.api.routes import ooc_routes
-from ooc.config.settings import settings
 from ooc.config.logging_config import setup_logging
+from ooc.config.settings import settings
 
 setup_logging()
 
