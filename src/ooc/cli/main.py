@@ -25,11 +25,7 @@ def simulate(
 
         simulation = LifeSimulation()
         simulation.run_simulation(steps=steps)
-        print(
-            json.dumps(
-                simulation.get_simulation_history(), ensure_ascii=False, indent=2
-            )
-        )
+        print(json.dumps(simulation.get_simulation_history(), ensure_ascii=False, indent=2))
         return
 
     from ooc.scripts.simulate_life import simulate_life

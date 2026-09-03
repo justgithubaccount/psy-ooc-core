@@ -1,6 +1,6 @@
-import pytest
-from ooc.core.the_self import TheSelf
 from ooc.core.growth_event import GrowthEvent
+from ooc.core.the_self import TheSelf
+
 
 def test_ego_handle_support():
     theself = TheSelf()
@@ -13,6 +13,7 @@ def test_ego_handle_support():
     assert ego.stability > 1.0
     assert ego.stage.name in ["DIFFERENTIATION", "INTEGRATION", "COHERENCE"]
 
+
 def test_ego_handle_frustration():
     theself = TheSelf()
     ego = theself.ego
@@ -22,7 +23,14 @@ def test_ego_handle_frustration():
 
     assert "Событие" in response
     assert ego.stability < 1.0
-    assert ego.stage.name in ["MERGED", "DIFFERENTIATION", "INTEGRATION", "COHERENCE", "DISRUPTION"]
+    assert ego.stage.name in [
+        "MERGED",
+        "DIFFERENTIATION",
+        "INTEGRATION",
+        "COHERENCE",
+        "DISRUPTION",
+    ]
+
 
 def test_ego_handle_trauma():
     theself = TheSelf()
@@ -34,6 +42,7 @@ def test_ego_handle_trauma():
     assert "Событие" in response
     assert ego.stage.name == "DISRUPTION"
     assert ego.stability <= 1.0  # В состоянии травмы стабильность может быть любой, но важна стадия
+
 
 def test_ego_disruption_directly():
     theself = TheSelf()

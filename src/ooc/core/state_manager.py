@@ -4,17 +4,17 @@ class StateManager:
     Отвечает за активные эмоции и состояния сознания.
     """
 
-    def __init__(self):
-        self.active_states = []  # Список текущих активных состояний
+    def __init__(self) -> None:
+        self.active_states: list[str] = []  # Список текущих активных состояний
 
-    def activate_state(self, state: str):
+    def activate_state(self, state: str) -> None:
         """
         Активировать новое состояние.
         """
         if state not in self.active_states:
             self.active_states.append(state)
 
-    def deactivate_state(self, state: str):
+    def deactivate_state(self, state: str) -> None:
         """
         Деактивировать состояние.
         """
@@ -27,7 +27,7 @@ class StateManager:
         """
         return state in self.active_states
 
-    def list_active_states(self) -> list:
+    def list_active_states(self) -> list[str]:
         """
         Вернуть список всех активных состояний.
         """

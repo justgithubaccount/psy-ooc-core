@@ -1,4 +1,12 @@
-from ooc.core.growth_event import GrowthEvent, EgoStage
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
+
+from ooc.core.growth_event import EgoStage, GrowthEvent
+
+if TYPE_CHECKING:
+    from ooc.core.the_self import TheSelf
+
 
 class Ego:
     """
@@ -6,13 +14,13 @@ class Ego:
     Отвечает за восприятие событий, активацию защит и развитие стадий.
     """
 
-    def __init__(self, self_ref: 'TheSelf'):
+    def __init__(self, self_ref: TheSelf) -> None:
         self.self_ref = self_ref
         self.stage = EgoStage.MERGED
-        self.reality_map = {}
-        self.active_defenses = []
-        self.current_focus = None
-        self.stability = 1.0  # Устойчивость Эго
+        self.reality_map: dict = {}
+        self.active_defenses: list[str] = []
+        self.current_focus: str | None = None
+        self.stability: float = 1.0  # Устойчивость Эго
 
     def handle_event(self, event: GrowthEvent) -> str:
         """
@@ -39,7 +47,7 @@ class Ego:
 
         return f"{response} → Стадия: {self.stage.name}, Устойчивость: {round(self.stability, 2)}"
 
-    def progress_stage(self):
+    def progress_stage(self) -> None:
         """
         Продвижение Эго на следующую стадию развития.
         """
@@ -48,11 +56,11 @@ class Ego:
             EgoStage.DIFFERENTIATION: EgoStage.INTEGRATION,
             EgoStage.INTEGRATION: EgoStage.COHERENCE,
             EgoStage.COHERENCE: EgoStage.COHERENCE,
-            EgoStage.DISRUPTION: EgoStage.DISRUPTION
+            EgoStage.DISRUPTION: EgoStage.DISRUPTION,
         }
         self.stage = next_stage.get(self.stage, self.stage)
 
-    def disrupt(self):
+    def disrupt(self) -> None:
         """
         Нарушение развития Эго — фиксация на стадии Disruption.
         """

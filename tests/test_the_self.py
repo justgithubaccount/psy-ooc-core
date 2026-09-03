@@ -1,12 +1,13 @@
-import pytest
-from ooc.core.the_self import TheSelf
 from ooc.core.growth_event import GrowthEvent
+from ooc.core.the_self import TheSelf
+
 
 def test_create_the_self():
     theself = TheSelf()
     assert theself.name == "TheSelf"
     assert theself.ego.stability == 1.0
     assert theself.ego.stage.name == "MERGED"
+
 
 def test_perceive_support_event():
     theself = TheSelf()
@@ -16,6 +17,7 @@ def test_perceive_support_event():
     assert "Событие" in response
     assert theself.ego.stability > 1.0
     assert theself.ego.stage.name in ["DIFFERENTIATION", "INTEGRATION", "COHERENCE"]
+
 
 def test_perceive_trauma_event():
     theself = TheSelf()
