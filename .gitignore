@@ -29,3 +29,6 @@ htmlcov/
 .idea/
 .vscode/
 .DS_Store
+
+# node (semantic-release)
+node_modules/
