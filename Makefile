@@ -1,44 +1,32 @@
-# ======== Переменные =========
-POETRY = poetry
-PYTHON = poetry run python
-UVICORN = poetry run uvicorn
-PYTEST = poetry run pytest
-BLACK = poetry run black
-RUFF = poetry run ruff
+UV = uv
 
-# ======== Команды проекта ========
+.PHONY: install run-server test simulate format lint check clean-pyc clean
 
 install:
-	$(POETRY) install
+	$(UV) sync
 
 run-server:
-	PYTHONPATH=src $(UVICORN) ooc.api.main:app --reload --host 0.0.0.0 --port 8000
+	$(UV) run uvicorn ooc.api.main:app --reload --host 0.0.0.0 --port 8000
 
 test:
-	$(PYTEST)
+	$(UV) run pytest
 
 simulate:
-	PYTHONPATH=src poetry run python src/ooc/scripts/simulate_life.py
+	$(UV) run ooc simulate
 
 format:
-	$(BLACK) src tests
+	$(UV) run black src tests
+	$(UV) run ruff check --fix src tests
 
 lint:
-	$(RUFF) src tests
+	$(UV) run ruff check src tests
+	$(UV) run black --check src tests
 
-update:
-	$(POETRY) update
-
-lock:
-	$(POETRY) lock
-
-# ======== Утилиты ========
+check: lint test
 
 clean-pyc:
-	find . -name "*.pyc" -delete
-	find . -name "*.pyo" -delete
-	find . -name "__pycache__" -delete
+	find . -name "*.py[co]" -delete
+	find . -name "__pycache__" -type d -exec rm -rf {} +
 
-clean:
+clean: clean-pyc
 	rm -rf dist build *.egg-info .pytest_cache .mypy_cache .ruff_cache
-

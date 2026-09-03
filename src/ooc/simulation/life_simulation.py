@@ -1,6 +1,8 @@
-from ooc.core.the_self import TheSelf
-from ooc.core.growth_event import GrowthEvent
 import random
+
+from ooc.core.growth_event import GrowthEvent
+from ooc.core.the_self import TheSelf
+
 
 class LifeSimulation:
     """
@@ -17,14 +19,16 @@ class LifeSimulation:
         Провести один шаг симуляции: обработать одно событие.
         """
         result = self.the_self.perceive_event(event)
-        self.history.append({
-            "event": event.name,
-            "impact": event.impact,
-            "type": event.type_,
-            "result": result,
-            "stage": self.the_self.ego.stage.name,
-            "stability": round(self.the_self.ego.stability, 2)
-        })
+        self.history.append(
+            {
+                "event": event.name,
+                "impact": event.impact,
+                "type": event.type_,
+                "result": result,
+                "stage": self.the_self.ego.stage.name,
+                "stability": round(self.the_self.ego.stability, 2),
+            }
+        )
 
     def random_event(self) -> GrowthEvent:
         """
@@ -35,7 +39,7 @@ class LifeSimulation:
             ("Фрустрация ожиданий", -0.3, "frustration"),
             ("Травматический опыт", -0.7, "trauma"),
             ("Успешное достижение", 0.3, "success"),
-            ("Потеря близкого", -0.5, "loss")
+            ("Потеря близкого", -0.5, "loss"),
         ]
         name, impact, type_ = random.choice(events)
         return GrowthEvent(name, impact, type_)

@@ -1,12 +1,14 @@
-import time
 import random
-from ooc.core.the_self import TheSelf
+import time
+
 from ooc.core.growth_event import GrowthEvent
+from ooc.core.the_self import TheSelf
+
 
 def simulate_life(steps: int = 20, delay: float = 1.0):
     """
     Автоматическая симуляция развития TheSelf.
-    
+
     :param steps: количество шагов симуляции
     :param delay: задержка между шагами в секундах
     """
@@ -32,7 +34,10 @@ def simulate_life(steps: int = 20, delay: float = 1.0):
         print(f"Шаг {step}: событие -> {event.name} ({event.type_}, {event.impact:+})")
         result = theself.perceive_event(event)
         print(f"👉 {result}")
-        print(f"🔎 Текущая стадия: {theself.ego.stage.name} | Устойчивость: {theself.ego.stability:.2f}\n")
+        print(
+            f"🔎 Текущая стадия: {theself.ego.stage.name} | "
+            f"Устойчивость: {theself.ego.stability:.2f}\n"
+        )
 
         time.sleep(delay)
 
@@ -40,6 +45,7 @@ def simulate_life(steps: int = 20, delay: float = 1.0):
     print("Финальное состояние:")
     print(f"🔹 Эго стадия: {theself.ego.stage.name}")
     print(f"🔹 Устойчивость: {theself.ego.stability:.2f}")
+
 
 if __name__ == "__main__":
     simulate_life()

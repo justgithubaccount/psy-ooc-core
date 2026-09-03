@@ -1,0 +1,242 @@
+[
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DIFFERENTIATION, Устойчивость: 1.2",
+    "stage": "DIFFERENTIATION",
+    "stability": 1.2
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: INTEGRATION, Устойчивость: 1.4",
+    "stage": "INTEGRATION",
+    "stability": 1.4
+  },
+  {
+    "event": "Травматический опыт",
+    "impact": -0.7,
+    "type": "trauma",
+    "result": "Событие: Травматический опыт (Тип: trauma, Влияние: -0.7) → Стадия: DISRUPTION, Устойчивость: 1.4",
+    "stage": "DISRUPTION",
+    "stability": 1.4
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: 1.1",
+    "stage": "DISRUPTION",
+    "stability": 1.1
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: 0.8",
+    "stage": "DISRUPTION",
+    "stability": 0.8
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: 0.8",
+    "stage": "DISRUPTION",
+    "stability": 0.8
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: 1.0",
+    "stage": "DISRUPTION",
+    "stability": 1.0
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: 0.5",
+    "stage": "DISRUPTION",
+    "stability": 0.5
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: 0.7",
+    "stage": "DISRUPTION",
+    "stability": 0.7
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: 0.2",
+    "stage": "DISRUPTION",
+    "stability": 0.2
+  },
+  {
+    "event": "Успешное достижение",
+    "impact": 0.3,
+    "type": "success",
+    "result": "Событие: Успешное достижение (Тип: success, Влияние: 0.3) → Стадия: DISRUPTION, Устойчивость: 0.5",
+    "stage": "DISRUPTION",
+    "stability": 0.5
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: 0.7",
+    "stage": "DISRUPTION",
+    "stability": 0.7
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: 0.9",
+    "stage": "DISRUPTION",
+    "stability": 0.9
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: 1.1",
+    "stage": "DISRUPTION",
+    "stability": 1.1
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: 0.8",
+    "stage": "DISRUPTION",
+    "stability": 0.8
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: 0.8",
+    "stage": "DISRUPTION",
+    "stability": 0.8
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: 0.3",
+    "stage": "DISRUPTION",
+    "stability": 0.3
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: -0.2",
+    "stage": "DISRUPTION",
+    "stability": -0.2
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: -0.0",
+    "stage": "DISRUPTION",
+    "stability": -0.0
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: -0.5",
+    "stage": "DISRUPTION",
+    "stability": -0.5
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: -0.5",
+    "stage": "DISRUPTION",
+    "stability": -0.5
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: -1.0",
+    "stage": "DISRUPTION",
+    "stability": -1.0
+  },
+  {
+    "event": "Успешное достижение",
+    "impact": 0.3,
+    "type": "success",
+    "result": "Событие: Успешное достижение (Тип: success, Влияние: 0.3) → Стадия: DISRUPTION, Устойчивость: -0.7",
+    "stage": "DISRUPTION",
+    "stability": -0.7
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: -0.7",
+    "stage": "DISRUPTION",
+    "stability": -0.7
+  },
+  {
+    "event": "Успешное достижение",
+    "impact": 0.3,
+    "type": "success",
+    "result": "Событие: Успешное достижение (Тип: success, Влияние: 0.3) → Стадия: DISRUPTION, Устойчивость: -0.4",
+    "stage": "DISRUPTION",
+    "stability": -0.4
+  },
+  {
+    "event": "Потеря близкого",
+    "impact": -0.5,
+    "type": "loss",
+    "result": "Событие: Потеря близкого (Тип: loss, Влияние: -0.5) → Стадия: DISRUPTION, Устойчивость: -0.9",
+    "stage": "DISRUPTION",
+    "stability": -0.9
+  },
+  {
+    "event": "Травматический опыт",
+    "impact": -0.7,
+    "type": "trauma",
+    "result": "Событие: Травматический опыт (Тип: trauma, Влияние: -0.7) → Стадия: DISRUPTION, Устойчивость: -0.9",
+    "stage": "DISRUPTION",
+    "stability": -0.9
+  },
+  {
+    "event": "Материнская забота",
+    "impact": 0.2,
+    "type": "support",
+    "result": "Событие: Материнская забота (Тип: support, Влияние: 0.2) → Стадия: DISRUPTION, Устойчивость: -0.7",
+    "stage": "DISRUPTION",
+    "stability": -0.7
+  },
+  {
+    "event": "Фрустрация ожиданий",
+    "impact": -0.3,
+    "type": "frustration",
+    "result": "Событие: Фрустрация ожиданий (Тип: frustration, Влияние: -0.3) → Стадия: DISRUPTION, Устойчивость: -0.7",
+    "stage": "DISRUPTION",
+    "stability": -0.7
+  },
+  {
+    "event": "Успешное достижение",
+    "impact": 0.3,
+    "type": "success",
+    "result": "Событие: Успешное достижение (Тип: success, Влияние: 0.3) → Стадия: DISRUPTION, Устойчивость: -0.4",
+    "stage": "DISRUPTION",
+    "stability": -0.4
+  }
+]

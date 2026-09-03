@@ -1,14 +1,15 @@
 from ooc.core.internal_object import InternalObject
 
+
 class InternalObjectMap:
     """
     Карта внутренних объектов — структура хранения всех внутренних образов внутри TheSelf.
     """
 
-    def __init__(self):
-        self.objects = {}  # Словарь вида {имя: InternalObject}
+    def __init__(self) -> None:
+        self.objects: dict[str, InternalObject] = {}  # Словарь вида {имя: InternalObject}
 
-    def add_object(self, internal_object: InternalObject):
+    def add_object(self, internal_object: InternalObject) -> None:
         """
         Добавить новый внутренний объект в карту.
         """
@@ -20,14 +21,14 @@ class InternalObjectMap:
         """
         return self.objects.get(name)
 
-    def remove_object(self, name: str):
+    def remove_object(self, name: str) -> None:
         """
         Удалить внутренний объект из карты по имени.
         """
         if name in self.objects:
             del self.objects[name]
 
-    def list_objects(self) -> list:
+    def list_objects(self) -> list[InternalObject]:
         """
         Вернуть список всех внутренних объектов.
         """

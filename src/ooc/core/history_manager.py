@@ -4,22 +4,22 @@ class HistoryManager:
     Сохраняет последовательность событий, изменений состояний и стадий развития.
     """
 
-    def __init__(self):
-        self.history = []  # Список записей истории
+    def __init__(self) -> None:
+        self.history: list[str] = []  # Список записей истории
 
-    def add_record(self, record: str):
+    def add_record(self, record: str) -> None:
         """
         Добавить новую запись в историю.
         """
         self.history.append(record)
 
-    def list_history(self) -> list:
+    def list_history(self) -> list[str]:
         """
         Получить всю историю развития.
         """
         return self.history
 
-    def clear_history(self):
+    def clear_history(self) -> None:
         """
         Очистить всю историю.
         """
