@@ -1,7 +1,10 @@
 import logging
 
+from ooc.config.settings import settings
+
+
 def setup_logging():
     logging.basicConfig(
-        level=logging.DEBUG,
+        level=getattr(logging, settings.log_level.upper(), logging.INFO),
         format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
     )
