@@ -4,8 +4,6 @@
 > Черновик
 
 
-# Повторно создадим README файл после сброса состояния
-readme_content = """
 Psyche: Object-Oriented Consciousness Core
 ==========================================
 
@@ -129,12 +127,3 @@ MIT
 Контакт
 -------
 Открыт к диалогу, симуляциям, творчеству и философским вопросам.
-"""
-
-# Сохраняем файл
-output_path = "/mnt/data/README_PSYCHE.txt"
-with open(output_path, "w") as f:
-    f.write(readme_content)
-
-output_path
-# ooc-core
